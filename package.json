@@ -8,7 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --check ./app"
+    "format": "prettier --check ./app",
+    "prettier:fix": "prettier --write app"
   },
   "dependencies": {
     "prettier": "^2.5.0",
@@ -57,11 +58,11 @@
     ]
   },
   "lint-staged": {
-    "app/**/*.{ts,tsx}": [
-      "eslint --ext .tsx --ext .ts app/ --fix"
-    ],
-    "./app/**": [
-      "prettier --write ."
+    "*.ts": [
+      "yarn lint",
+      "yarn prettier:fix",
+      "eslint --max-warnings 0 --fix",
+      "git add ."
     ]
   },
   "husky": {

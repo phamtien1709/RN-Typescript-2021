@@ -4,7 +4,7 @@ import {View, Text} from 'react-native'
 const Navigator = () => {
   return (
     <View>
-      <Text>Navigator</Text>
+      <Text>Navigator Root</Text>
     </View>
   )
 }
