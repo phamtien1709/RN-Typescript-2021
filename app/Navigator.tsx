@@ -1,7 +1,7 @@
 import React from 'react'
 import {View, Text} from 'react-native'
 
-const Navigator = () => {
+const Navigator: React.FC = () => {
   return (
     <View>
       <Text>Navigator Root</Text>
