@@ -9,7 +9,8 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --check ./app",
-    "prettier:fix": "prettier --write app"
+    "prettier:fix": "prettier --write app",
+    "prepare": "husky install"
   },
   "dependencies": {
     "prettier": "^2.5.0",
@@ -36,7 +37,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.0.1",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "jest": "^26.6.3",
     "lint-staged": "^12.1.2",
     "metro-react-native-babel-preset": "^0.66.2",
