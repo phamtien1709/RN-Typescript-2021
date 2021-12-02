@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --check ./app",
-    "prettier:fix": "prettier --write app",
+    "prettier:fix": "prettier --write ./app",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -64,11 +64,7 @@
       "yarn prettier:fix",
       "eslint --max-warnings 0 --fix",
       "git add ."
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    ],
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
   }
 }

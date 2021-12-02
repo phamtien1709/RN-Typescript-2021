@@ -4,7 +4,8 @@ import {View, Text} from 'react-native'
 const Navigator: React.FC = () => {
   return (
     <View>
-      <Text>Navigator Root</Text>
+      <Text>Navigator</Text>
+      <Text>Root</Text>
     </View>
   )
 }
